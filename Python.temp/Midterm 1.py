@@ -29,12 +29,18 @@ S_r = (w * Gs) / e
 print("--- Question 1: Volumetric Properties ---")
 print(f"Volume (Geometric Method): {volume_geom:.2f} cm³")
 print(f"Volume (Water Displacement Method): {volume_water:.2f} cm³")
+print("The method that involved volume calculation by specimen dimensions"
+" produced a higher relative error at (0.02) .Yes the volume estimates agree"
+" with the experimental error. The relative error obtained from implementing the Archimedes method was overall more reliable in estimating our volumes because the"
+" value obtained showed a lower relative error based on error estimates.")
 print(f"Specific Gravity (Gs): {Gs:.3f}")
 print(f"Water Content (w): {w:.3f}")
 print(f"Dry Density (ρd): {dry_density:.3f} g/cm³")
 print(f"Void Ratio (e): {e:.3f}")
 print(f"Porosity (n): {n:.3f}")
 print(f"Saturation Ratio (S_r): {S_r:.3f}")
+print("Assumptions on e,w, and Gs in their general formula  make it hard to get or calculate an exact value except for 1 for Sr as the values of Sr make it hard for.")
+print()
 
 # Question 2 - Hydraulic Properties
 # Given data
@@ -64,12 +70,25 @@ delta_h_water = np.log(h_initial / h_final)
 K_water_mean = 2.081e-5  # Corrected value based on user input
 k_permeability_water = 1.827e-12  # Corrected value based on user input
 
-# Printing results
+# Printing our results for question 2
 print("--- Question 2: Hydraulic Properties ---")
+print("Defining hydraulic conductivity and permeability")
+print("Hydraulic conductivity measues how easily fluids flow through a "
+"porous material within a hydraulic gradient. Permeability is a material "
+"property that describes the ability of fluids to move through materials,"
+" independent of the fluid type. Hydraulic conductivity is measured in m/s"
+" and permeability is measured in m^2 . Hy draulic conductivity depends on"
+" the fluid properties meanwhile permeability depends on the intrinsic "
+"property of the material the fluids are flowing through.")
 print(f"Hydraulic Conductivity in Air (Ka): {K_air_mean:.3e} m/s")
 print(f"Permeability in Air (k_air): {k_permeability_air:.3e} m^2")
 print(f"Hydraulic Conductivity in Water (Kw): {K_water_mean:.3e} m/s")
 print(f"Permeability in Water (k_water): {k_permeability_water:.3e} m^2")
+print("Comparing the results from b and c to see if they agree within experimantal error.")
+print("While calculating the value of constant head in part b we obtained"
+" different  permeability values in orders of magnitude which suggested "
+"significant experimental errors in both cases.")
+print()
 
 # Question 3 - Effective Hydraulic Conductivity
 # Given data
@@ -103,7 +122,7 @@ length_excavation = 80  # m
 area_excavation = width_excavation * length_excavation  # m²
 total_flow_rate = 3219.27  # Corrected value based on user input (L/hr)
 
-# Printing results
+# Printing results for question 3
 print("--- Question 3: Effective Hydraulic Conductivity ---")
 print(f"Total Flow Distance (L): {H_total:.2f} m")
 print(f"Effective Hydraulic Conductivity (K_eff): {K_effective:.3e} m/s")
@@ -111,5 +130,11 @@ print(f"Head Loss (Silty Sand): {head_loss_silty_sand:.3f} m")
 print(f"Head Loss (Clay): {head_loss_clay:.3f} m")
 print(f"Head Loss (Gravel): {head_loss_gravel:.3f} m")
 print(f"Hydraulic Gradient (i): {hydraulic_gradient:.3f}")
+print("The specific discharge is likely to be lower compared to the travel"
+" path in a. This is because as you move along the sheet pile, the total "
+"flow distance would be increased without any changes in the head difference")
 print(f"Specific Discharge (q): {specific_discharge:.3e} m/s")
 print(f"Total Flow Rate (Q): {total_flow_rate:.2f} L/hr")
+print("This estimate would likely be higher or an overestimate due to variation "
+"in soil coditions, saturation effects, clogging and drainage losses and "
+"assumptions.")
