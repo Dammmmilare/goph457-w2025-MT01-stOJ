@@ -25,6 +25,17 @@ n = e / (1 + e)
 # (d) Saturation verification
 S_r = (w * Gs) / e
 
+# Printing results for Question 1
+print("--- Question 1: Volumetric Properties ---")
+print(f"Volume (Geometric Method): {volume_geom:.2f} cm³")
+print(f"Volume (Water Displacement Method): {volume_water:.2f} cm³")
+print(f"Specific Gravity (Gs): {Gs:.3f}")
+print(f"Water Content (w): {w:.3f}")
+print(f"Dry Density (ρd): {dry_density:.3f} g/cm³")
+print(f"Void Ratio (e): {e:.3f}")
+print(f"Porosity (n): {n:.3f}")
+print(f"Saturation Ratio (S_r): {S_r:.3f}")
+
 # Question 2 - Hydraulic Properties
 # Given data
 diameter_specimen = 6.0  # cm
