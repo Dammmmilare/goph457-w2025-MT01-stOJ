@@ -94,7 +94,7 @@ print(f"Hydraulic Conductivity in Water (Kw): {K_water_mean:.3e} cm/s")
 print(f"Permeability (k) from Water Test: {k_permeability_water:.3e} m^2")
 
 # Question 3 - Effective Hydraulic Conductivity
-# Given data
+# Given data for the soil layers
 K_silty_sand = 5.8e-5  # m/s
 K_clay = 3.6e-8  # m/s
 K_gravel = 1.9e-2  # m/s
