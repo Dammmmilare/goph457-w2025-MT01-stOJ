@@ -4,6 +4,9 @@
 *Instructor:* B. Karchewski
 *Author:* Oyedemi Joshua Oluwadamilare.
 
+AI USE:
+The use of AI was not lost in completing an ample and gorgeous portion of the implemented code uploaded onto the git repository and in this lab assignment. I used AI to guide code implementation, numerical analysis techniques, and various debugging strategies. It helped in suggesting methods for testing, plotting results effectively and efficiently, and refining function outputs.
+
 HOW TO INSTALL
 
 NOTE!!!: Cloning my remote repository to your local machine;
